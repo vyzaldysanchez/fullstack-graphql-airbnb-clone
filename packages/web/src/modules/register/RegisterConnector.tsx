@@ -12,9 +12,7 @@ export class RegisterConnector extends React.PureComponent<
   RouteComponentProps<{}>
 > {
   onFinish = () => {
-    this.props.history.push("/m/confirm-email", {
-      message: "check your email to confirm your account"
-    });
+    this.props.history.push("/login");
   };
 
   render() {
